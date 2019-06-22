@@ -1,0 +1,10 @@
+include_directories(${PROJECT_INCLUDE_DIR})
+
+file(GLOB MINK_SOURCES ${PROJECT_SOURCE_DIR}/examples/MILP/MinKPart/*.cpp)
+#add_executable(gravity101 ${PROJECT_SOURCE_DIR}/examples/Gravity101_main.cpp)
+#add_executable(pooling ${PROJECT_SOURCE_DIR}/examples/MINLP/Pooling_main.cpp)
+#add_executable(stable_set ${PROJECT_SOURCE_DIR}/examples/MILP/StableSet/Stable_Set_main.cpp)
+add_executable(min_k_part ${MINK_SOURCES})
+#add_executable(neuralnet ${PROJECT_SOURCE_DIR}/examples/Classification/NeuralNet_main.cpp ${PROJECT_SOURCE_DIR}/examples/Classification/DataSet.cpp)
+#add_executable(fusions ${PROJECT_SOURCE_DIR}/examples/MILP/fusions/Fusion_main.cpp)
+target_link_libraries(min_k_part gravity)
