@@ -1,7 +1,7 @@
 This is the implementation oft the MPC article "Exploiting sparsity for the min
 k-partition problem". 
 
-DOI: 10.5281/zenodo.3252476
+https://doi.org/10.5281/zenodo.3252476
 
 # Installation Guide
 
